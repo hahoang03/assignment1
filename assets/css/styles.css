@@ -1,0 +1,306 @@
+:root {
+    --bg: #ffffff;
+    --text: #111827;
+    --muted: #6b7280;
+    --accent: blue;
+    --accent-2: #f59e0b;
+    --radius: 8px;
+    --max-width: 1100px;
+    --base-font: 16px;
+    --container-padding: 1rem;
+}
+[data-theme="dark"] {
+    --bg: #0b1220;
+    --text: #e6eef6;
+    --muted: #9aa4b2;
+    --accent: blue;
+    --accent-2: #f6b34b;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: var(--base-font);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial;
+}
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+}
+
+.container {
+  width: min(100%, 1600px);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 3rem);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+.site-header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(4px);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-left;
+  gap: 1.5rem;
+  width: min(100%, 1550px);
+  padding: 1.75rem;
+  margin-inline: auto;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text);
+    text-decoration: none;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.logo .brand-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;   /* bo góc, hoặc 50% nếu muốn tròn */
+    object-fit: cover;     /* giữ tỉ lệ ảnh */
+    display: inline-block;
+    vertical-align: middle; /* canh giữa với text */
+    margin-right: 0.5rem;  /* khoảng cách với tên UniClothes */
+}
+
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.main-nav a {
+    padding: 0.5rem 0.6rem;
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--text);
+}
+.main-nav a:focus,
+.main-nav a:hover {
+    background: rgba(0, 0, 0, 0.04);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.08);
+}
+
+.header-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 1.25rem;
+    padding: 0.35rem;
+}
+.theme-toggle {
+    border: 0;
+    background: transparent;
+    font-size: 1.1rem;
+    padding: 0.35rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 1.25rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.hero .hero-copy h1 {
+    font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+    margin: 0 0 0.5rem 0;
+}
+.hero .cta {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+/* Grid for products */
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Card styles */
+.card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
+    border-radius: 12px;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 2px 12px rgba(2, 6, 23, 0.03);
+}
+
+/* Ảnh sản phẩm luôn vừa khung */
+.card figure {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* khung vuông, có thể đổi 4/3 hoặc 3/4 tuỳ ý */
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* tự co/zoom ảnh cho vừa khung */
+    display: block;
+}
+
+/* Text dưới ảnh */
+.card figcaption {
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* Forms */
+form {
+    background: transparent;
+    padding: 1rem;
+    border-radius: 10px;
+}
+fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+legend {
+    font-weight: 700;
+    padding: 0 0.5rem;
+}
+label {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: transparent;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+input[type="file"] {
+    padding: 0.4rem;
+}
+input[type="range"] {
+    width: 100%;
+}
+button[type="submit"],
+button[type="reset"],
+.button {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    border: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Utilities */
+.sr-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.25rem 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+.container-pad {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+/* Responsive header */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    .main-nav {
+        position: absolute;
+        right: var(--container-padding);
+        top: 64px;
+        background: var(--bg);
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(2, 6, 23, 0.14);
+        display: none;
+    }
+    .main-nav.open {
+        display: block;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .header-inner {
+        padding: 0.6rem var(--container-padding);
+    }
+}
+
+/* focus-visible */
+:focus-visible {
+    outline: 3px solid rgba(14, 165, 233, 0.12);
+    outline-offset: 3px;
+}
