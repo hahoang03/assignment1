@@ -93,24 +93,23 @@ Dark theme
 ## 4. Folder Structure
 
 / (root)
-index.html
-about.html
-products.html
-products1.html
-gallery.html
-blog.html
-post1.html
-contact.html
-map.html
-policy.html
-
-assets/
-css/
-styles.css
-js/
-main.js
-img/
-(all images)
+├── index.html
+├── about.html
+├── products.html
+├── products1.html
+├── gallery.html
+├── blog.html
+├── post1.html
+├── contact.html
+├── map.html
+├── policy.html
+└── assets/
+  ├── css/
+  │ └── styles.css
+  ├── js/
+  │ └── main.js
+  └── img/
+    └── ...(all images)
 
 
 ---
