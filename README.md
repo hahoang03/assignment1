@@ -2,7 +2,7 @@
 
 **Author:** Nguyễn Trần Hoàng Hạ (ITITIU21127)  
 **Project Duration:** 2 weeks  
-**Deployment:** https://hahoang03.github.io/assignment1/
+**Deployment:** https://hahoang03.github.io/assignment1/  
 **GitHub Repository:** https://github.com/hahoang03/assignment1
 
 ---
@@ -84,25 +84,26 @@ This project is a **10-page personal website** for a small clothing business cal
 ---
 
 ## 4. Folder Structure
+
 / (root)
-│── index.html
-│── about.html
-│── products.html
-│── products1.html
-│── gallery.html
-│── blog.html
-│── post1.html
-│── contact.html
-│── map.html
-│── policy.html
-│
-├── assets/
-│ ├── css/
-│ │ └── styles.css
-│ ├── js/
-│ │ └── main.js
-│ └── img/
-│ └── (all images)
+index.html
+about.html
+products.html
+products1.html
+gallery.html
+blog.html
+post1.html
+contact.html
+map.html
+policy.html
+
+assets/
+css/
+styles.css
+js/
+main.js
+img/
+(all images)
 
 
 ---
@@ -118,9 +119,9 @@ This project is a **10-page personal website** for a small clothing business cal
 
 ## 6. Credits
 
-- Images: [source URLs or Unsplash/Pexels/etc.]  
-- Icons: [FontAwesome / other sources]  
-- YouTube video: [link]  
+- Images: Google
+- Icons: FontAwesome 
+- YouTube video: Link video
 - Map iframe: Google Maps  
 
 ---
