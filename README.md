@@ -152,3 +152,10 @@ https://www.figma.com/design/HvvnRtBYgGvSW2ElzxRgmD/UniClothes?node-id=1-2&t=FSl
 | Performance & Optimization | Pass | Images optimized, meta tags present, favicon included, site loads quickly. |
 | Deployment | Pass | Site hosted on GitHub Pages, all links work. |
 
+
+## 9. AI Usage Log
+
+- **Tool Used:** ChatGPT  
+- **Prompts:** Generated ideas for site map, README structure, CSS layout examples  
+- **Modifications:** Customized code, content, page descriptions, and folder structure according to assignment requirements
+
