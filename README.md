@@ -131,11 +131,5 @@ img/
 - YouTube video: Link video
 - Map iframe: Google Maps  
 
----
 
-## 7. AI Usage Log
-
-- **Tool Used:** ChatGPT  
-- **Prompts:** Generated ideas for site map, README structure, CSS layout examples  
-- **Modifications:** Customized content, page descriptions, and folder structure according to assignment requirements
 
