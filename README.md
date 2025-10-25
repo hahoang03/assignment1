@@ -104,12 +104,12 @@ Dark theme
   map.html  
   policy.html  
   assets/  
-    css/  
-      styles.css  
-    js/  
-      main.js  
-    img/  
-      (all images)
+      css/  
+        styles.css  
+      js/  
+        main.js  
+      img/  
+        (all images)
 
 
 
