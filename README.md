@@ -143,12 +143,12 @@ https://www.figma.com/design/HvvnRtBYgGvSW2ElzxRgmD/UniClothes?node-id=1-2&t=FSl
 
 | Test Area | Status | Notes |
 |-----------|--------|-------|
-| Navigation | Pass | Menu links work correctly on all pages; consistent navigation bar. |
+| Navigation | Pass | Menu links work correctly on all pages, consistent navigation bar. |
 | Pages | Pass | All 10 pages load correctly. |
-| Media & Iframe | Pass | Images load correctly; YouTube video and Google Map iframe display correctly. |
-| Form | Pass | Contact/order form includes all input types; validation and error messages functional. |
-| CSS & Responsiveness | Pass | Layout adjusts correctly at different screen widths; consistent styling. |
-| Accessibility | Pass | Keyboard navigation works; focus rings visible; proper heading structure; alt text present. |
-| Performance & Optimization | Pass | Images optimized; meta tags present; favicon included; site loads quickly. |
-| Deployment | Pass | Site hosted on GitHub Pages; all links work. |
+| Media & Iframe | Pass | Images load correctly, YouTube video and Google Map iframe display correctly. |
+| Form | Pass | Contact/order form includes all input types, validation and error messages functional. |
+| CSS & Responsiveness | Pass | Layout adjusts correctly at different screen widths, consistent styling. |
+| Accessibility | Pass | Keyboard navigation works, focus rings visible; proper heading structure, alt text present. |
+| Performance & Optimization | Pass | Images optimized, meta tags present, favicon included, site loads quickly. |
+| Deployment | Pass | Site hosted on GitHub Pages, all links work. |
 
