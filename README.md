@@ -131,5 +131,8 @@ img/
 - YouTube video: Link video
 - Map iframe: Google Maps  
 
+---
+## 7. Design
 
+https://www.figma.com/design/HvvnRtBYgGvSW2ElzxRgmD/UniClothes?node-id=1-2&t=FSlHdaz1CA3xjFKD-1
 
