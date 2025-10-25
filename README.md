@@ -2,8 +2,8 @@
 
 **Author:** Nguyễn Trần Hoàng Hạ (ITITIU21127)  
 **Project Duration:** 2 weeks  
-**Deployment:** [https://hahoang03.github.io/assignment1/] 
-**GitHub Repository:** [https://github.com/hahoang03/assignment1]
+**Deployment:** https://hahoang03.github.io/assignment1/
+**GitHub Repository:** https://github.com/hahoang03/assignment1
 
 ---
 
@@ -84,4 +84,50 @@ This project is a **10-page personal website** for a small clothing business cal
 ---
 
 ## 4. Folder Structure
+/ (root)
+│── index.html
+│── about.html
+│── products.html
+│── products1.html
+│── gallery.html
+│── blog.html
+│── post1.html
+│── contact.html
+│── map.html
+│── policy.html
+│
+├── assets/
+│ ├── css/
+│ │ └── styles.css
+│ ├── js/
+│ │ └── main.js
+│ └── img/
+│ └── (all images)
+
+
+---
+
+## 5. How to Run
+
+1. Clone or download the repository  
+2. Open `index.html` in a web browser  
+3. Navigate through the pages using the menu  
+4. Submit the contact/order form to see validation in action  
+
+---
+
+## 6. Credits
+
+- Images: [source URLs or Unsplash/Pexels/etc.]  
+- Icons: [FontAwesome / other sources]  
+- YouTube video: [link]  
+- Map iframe: Google Maps  
+
+---
+
+## 7. AI Usage Log
+
+- **Tool Used:** ChatGPT  
+- **Prompts:** Generated ideas for site map, README structure, CSS layout examples  
+- **Modifications:** Customized content, page descriptions, and folder structure according to assignment requirements
 
