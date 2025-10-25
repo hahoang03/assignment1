@@ -102,7 +102,8 @@ Dark theme
   post1.html  
   contact.html  
   map.html  
-  policy.html  
+  policy.html 
+  
   assets/  
       css/  
         styles.css  
