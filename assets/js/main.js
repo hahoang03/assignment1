@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // THEME CHngae TOGGLE
+  // THEME CHANGE TOGGLE
   const themeToggle = document.getElementById("theme-toggle");
   if (themeToggle) {
     const currentTheme = localStorage.getItem("site-theme") || "light";
@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
       output.textContent = range.value + ":00";
     });
   }
-
 
   // FORM VALIDATION + PROGRESS + METER
   const form = document.getElementById("order-form");
@@ -85,7 +84,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!valid) {
         if (firstInvalid) firstInvalid.focus();
-        alert(`Please check the field "${firstInvalid.name}" and enter valid input.`);
+
+        // Create detailed error message
+        let message = `"${firstInvalid.name}" is invalid.`;
+        if (firstInvalid.validity.valueMissing) message += " This field is required.";
+        if (firstInvalid.validity.typeMismatch) {
+          if (firstInvalid.type === "email") message += " Enter a valid email (e.g., you@example.com).";
+          if (firstInvalid.type === "tel") message += " Enter a valid phone number (e.g., +84 9xx xxx xxx).";
+        }
+        if (firstInvalid.validity.tooShort) message += ` Minimum length is ${firstInvalid.minLength} characters.`;
+        if (firstInvalid.validity.rangeUnderflow) message += ` Minimum value is ${firstInvalid.min}.`;
+        if (firstInvalid.validity.rangeOverflow) message += ` Maximum value is ${firstInvalid.max}.`;
+        if (firstInvalid.validity.patternMismatch) {
+          if (firstInvalid.id === "captcha") message += " Enter the code exactly as shown.";
+          if (firstInvalid.id === "phone") message += " Enter a valid phone number format.";
+        }
+
+        alert(message);
       } else {
         alert("Thank you! Your order has been submitted successfully.");
         form.reset();
