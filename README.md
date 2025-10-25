@@ -18,6 +18,13 @@ This project is a **10-page personal website** for a small clothing business cal
 - Apply responsive and visually appealing CSS design
 - Deploy online with proper documentation
 
+Light theme
+<img width="1422" height="705" alt="img1" src="https://github.com/user-attachments/assets/b5ccfff7-7b61-4206-b441-15450077b6aa" />
+
+Dark theme
+<img width="1422" height="705" alt="img2" src="https://github.com/user-attachments/assets/a8774f57-5284-4742-8191-ac1f62df8b88" />
+
+
 ---
 
 ## 2. Site Map
